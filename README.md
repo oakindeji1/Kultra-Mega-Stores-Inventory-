@@ -13,4 +13,9 @@
 Before I proceed, I made sure I Cleaning the relevant columns. The dataset was cleaned and ready for analysis. All relevant columns such as Sales, Discount, Profit, Unit Price, and Shipping Cost are numeric, and date fields are in proper datetime format.
 
 ✅ Case Scenario I
+### 1. Which product category had the highest sales?
+'''select Product_Category, Sales from [dbo].[KMS Sql Case Study2]
+where Sales = (select max(sales) from [dbo].[KMS Sql Case Study2])'''
+![image](https://github.com/user-attachments/assets/e3cecd0f-aafb-4702-8a05-f252dae57adc)
+
 
