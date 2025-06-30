@@ -22,15 +22,20 @@ where Sales = (select max(sales) from [dbo].[KMS Sql Case Study2])</code></pre>
 <pre> <code>select  top 3 Region, SUM(Sales) as totalsales  from [dbo].[KMS Sql Case Study2]
 GROUP BY Region
 ORDER BY totalsales DESC</code></pre>
+![image](https://github.com/user-attachments/assets/b298a014-3502-436f-8c79-710d5c0caf79)
 
 <pre> <code>select  top 3 Region, SUM(Sales) as totalsales  from [dbo].[KMS Sql Case Study2]
 GROUP BY Region
 ORDER BY totalsales ASC</code></pre>
 
+![image](https://github.com/user-attachments/assets/5bc75841-2600-4197-8838-e377d794ec91)
+
 --3. What were the total sales of appliances in Ontario?
 
 <pre> <code>Select sum(Sales) as TotalSales from [dbo].[KMS Sql Case Study2]
 where Region = 'Ontario'</code></pre>
+![image](https://github.com/user-attachments/assets/717f03c9-aa87-4b17-8113-350607f8df47)
+
 
 --4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers 
 <pre> <code>Select  Top 10 * from [dbo].[KMS Sql Case Study2] 
@@ -38,13 +43,14 @@ order by Profit DESC</code></pre>
 
 <pre> <code>Select  Top 10 * from [dbo].[KMS Sql Case Study2] 
 order by Profit ASC</code></pre>
---Shipping cost - Order Quantity
---Unit price
---I will advise KMS to to increase discount for the customers and also increase adverstiment to atract those customers
+### To reduce the Shipping cost - Order Quantity and reduce Unit price
+### I will also advise KMS to to increase discount for the customers and also increase adverstiment to atract those customers
 
 --5. KMS incurred the most shipping cost using which shipping method?
 <pre> <code>Select shipping_Cost,Ship_Mode from [dbo].[KMS Sql Case Study2]
 where shipping_Cost =(Select  Max(shipping_Cost) as Max_shipping_Cost from [dbo].[KMS Sql Case Study2])</code></pre>
+
+![image](https://github.com/user-attachments/assets/9ee3c211-e1c5-4454-9ed0-d8566dea2790)
 
 --Case Scenario II 
 --6. Who are the most valuable customers, and what products or services do they 
@@ -54,6 +60,7 @@ where shipping_Cost =(Select  Max(shipping_Cost) as Max_shipping_Cost from [dbo]
 FROM [dbo].[KMS Sql Case Study2]
 ORDER BY profit DESC</code></pre>
 
+![image](https://github.com/user-attachments/assets/445cc60d-9107-40ce-baf5-4e3aacee307e)
 
 --7. Which small business customer had the highest sales? 
 <pre> <code>SELECT Top 1 Customer_Name, SUM(Sales) AS Total_Sales
@@ -61,6 +68,9 @@ FROM [dbo].[KMS Sql Case Study2]
 WHERE Customer_Segment = 'Small Business'
 GROUP BY Customer_Name
 ORDER BY Total_Sales DESC</code></pre>
+
+![image](https://github.com/user-attachments/assets/8952f775-ddc0-460e-8653-04c01f5017d6)
+
 --8. Which Corporate Customer placed the most number of orders in 2009 – 2012? 
 <pre> <code>select * from [dbo].[KMS Sql Case Study2]
 SELECT Top 1 Customer_Name, COUNT(Order_ID) AS Order_Count
@@ -68,12 +78,18 @@ FROM [dbo].[KMS Sql Case Study2]
 WHERE Customer_Segment = 'Corporate'
 GROUP BY Customer_Name
 ORDER BY Order_Count DESC</code></pre>
+
+![image](https://github.com/user-attachments/assets/2e4470fb-8adc-4f99-91f3-0929c6b08345)
+
 --9. Which consumer customer was the most profitable one? 
 <pre> <code>SELECT Top 1 Customer_Name, SUM(Profit) AS Total_Profit
 FROM [dbo].[KMS Sql Case Study2]
 WHERE Customer_Segment = 'Consumer'
 GROUP BY Customer_Name
 ORDER BY Total_Profit DESC</code></pre>
+
+![image](https://github.com/user-attachments/assets/b3d9aa4c-7a2d-43cd-a358-a203d7377126)
+
 --10. Which customer returned items, and what segment do they belong to? 
 
 
