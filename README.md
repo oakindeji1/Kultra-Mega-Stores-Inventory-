@@ -7,3 +7,6 @@
 #### The dataset was successfully loaded. It contains 8,399 records and 21 columns with data ranging from 2009 to 2012, including order information, customer segments, product details, financial metrics, and shipping information. However, key numeric fields like Sales, Discount, Profit, Unit Price, and Shipping Cost are stored as strings with currency symbols or percentage signs, which need cleaning for proper analysis.
 
 ![Screenshot 2025-06-26 002810](https://github.com/user-attachments/assets/3e3dff70-47a9-4e1b-84b5-4aafb52cb4cd)
+
+![image](https://github.com/user-attachments/assets/407dac72-f9bc-4353-94ed-b4bf74b53773)
+
