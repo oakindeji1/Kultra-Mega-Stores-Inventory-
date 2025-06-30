@@ -14,8 +14,8 @@ Before I proceed, I made sure I Cleaning the relevant columns. The dataset was c
 
 ✅ Case Scenario I
 ### 1. Which product category had the highest sales?
-'''select Product_Category, Sales from [dbo].[KMS Sql Case Study2]
-where Sales = (select max(sales) from [dbo].[KMS Sql Case Study2])'''
+<pre> <code>'''select Product_Category, Sales from [dbo].[KMS Sql Case Study2]
+where Sales = (select max(sales) from [dbo].[KMS Sql Case Study2])'''</code></pre>
 ![image](https://github.com/user-attachments/assets/e3cecd0f-aafb-4702-8a05-f252dae57adc)
 
 
