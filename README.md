@@ -10,3 +10,7 @@
 
 ![image](https://github.com/user-attachments/assets/407dac72-f9bc-4353-94ed-b4bf74b53773)
 
+Before I proceed, I made sure I Cleaning the relevant columns. The dataset was cleaned and ready for analysis. All relevant columns such as Sales, Discount, Profit, Unit Price, and Shipping Cost are numeric, and date fields are in proper datetime format.
+
+✅ Case Scenario I
+
