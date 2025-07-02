@@ -104,7 +104,7 @@ order by shipping_cost DESC</code></pre>
 
 ![image](https://github.com/user-attachments/assets/039dd8b0-8326-4f46-85f9-d8f0b3a2f51e)
 
-#####Based on the above finding it was discovered that  delivery truck has the most expensive shipping cost which is not in aggrement with the statement above
+##### Based on the above finding it was discovered that  delivery truck has the most expensive shipping cost which is not in aggrement with the statement above
 
 
 
