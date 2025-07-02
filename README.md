@@ -43,7 +43,7 @@ order by Profit DESC</code></pre>
 
 <pre> <code>Select  Top 10 * from [dbo].[KMS Sql Case Study2] 
 order by Profit ASC</code></pre>
-### To reduce the Shipping cost - Order Quantity and reduce Unit price
+### To reduce the Shipping cost , and Unit price
 ### I will also advise KMS to to increase discount for the customers and also increase adverstiment to atract those customers
 
 ### 5. KMS incurred the most shipping cost using which shipping method?
@@ -90,13 +90,21 @@ ORDER BY Total_Profit DESC</code></pre>
 ![image](https://github.com/user-attachments/assets/b3d9aa4c-7a2d-43cd-a358-a203d7377126)
 
 ### 10. Which customer returned items, and what segment do they belong to? 
+<pre> <code>Select Top 10 k.Customer_Name, o.[Status], k.Customer_Segment
+from [KMS Sql Case Study2] k
+join
+Order_Status2 o on o.Order_ID = k.Order_ID </code></pre>
+![image](https://github.com/user-attachments/assets/0632f435-1d63-4e5f-a17f-263ce8983c41)
 
 
-### 11. If the delivery truck is the most economical but the slowest shipping method and 
---Express Air is the fastest but the most expensive one, do you think the company 
---appropriately spent shipping costs based on the Order Priority? Explain your answer
+### 11. If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer
 <pre> <code>Select ship_mode, order_Priority,shipping_cost, Order_Date, Ship_Date from 
 [dbo].[KMS Sql Case Study2]
 order by shipping_cost DESC</code></pre>
+
+![image](https://github.com/user-attachments/assets/039dd8b0-8326-4f46-85f9-d8f0b3a2f51e)
+
+#####Based on the above finding it was discovered that  delivery truck has the most expensive shipping cost which is not in aggrement with the statement above
+
 
 
